@@ -14,7 +14,14 @@ var main = function() {
 
   $(".services-button").click(function(){
 
-      $(this).parent().find(".service-info-toggled").toggleClass('hide-div');
+      var textToToggle = $(this).parent().find(".service-info-toggled");
+
+      if (textToToggle.is(":visible")) {
+        textToToggle.fadeOut(700);
+        
+      } else {
+        textToToggle.fadeIn(800);
+      } 
 
 
      if ($(this).find('.btn-text').html() == "Click for details"){

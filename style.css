@@ -353,6 +353,6 @@ header .wrapper::before {
 .service-info-toggled span{
   font-weight: bold;
 }
-.hide-div{
+ .hide-div{
   display: none;
-}
+} 
