@@ -231,7 +231,7 @@ header .wrapper::before {
 /* ----------- section  services ----------------------------*/
 
 .section-services {
-  height:150vh;
+  height:250vh;
   position: relative;
   z-index: 1;
   color:#00666F;
@@ -265,7 +265,10 @@ header .wrapper::before {
 }
 .service-wrapper {
   border-bottom: 1px solid white;
-  padding:35px 0px 20px 25%;
+  padding:35px 20px 20px 30px;
+}
+.service-info-displayed{
+  margin-left: 25%;
 }
 .service-title {
   font-size:1.5rem;
@@ -324,4 +327,18 @@ header .wrapper::before {
   color:#00666F;
   cursor: pointer; cursor: hand;
   font-size: 1rem;
+}
+.service-info-toggled{
+  margin: 30px;
+  text-align: justify;
+}
+.service-info-toggled p{
+  margin: 10px 0;
+  line-height: 25px;
+}
+.service-info-toggled p:nth-child(n+3){
+  text-indent: 50px;
+}
+.service-info-toggled span{
+  font-weight: bold;
 }
