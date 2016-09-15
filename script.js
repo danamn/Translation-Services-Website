@@ -10,5 +10,23 @@ var main = function() {
       event.preventDefault();
    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
     });
+
+
+  $(".services-button").click(function(){
+
+
+      console.log("click");
+      $(this).parents().find(".service-info-toggled").toggleClass('hide-div');
+
+     if ($(this).find('.btn-text').html() == "Click for details"){
+        $(this).find('.btn-text').html('Click to hide details');
+     } else {
+          $(this).find('.btn-text').html('Click for details');
+      }
+   
+      
+    });
+
 }
+
 $(document).ready(main)
