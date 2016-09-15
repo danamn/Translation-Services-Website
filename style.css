@@ -335,12 +335,15 @@ header .wrapper::before {
   outline:0;
 }
 .service-info-toggled{
-  margin: 30px;
+  margin: 0px;
   text-align: justify;
+  height:0;
+  overflow: hidden;
 }
 .service-info-toggled p{
   margin: 10px 0;
   line-height: 25px;
+  
 }
 .service-info-toggled p:nth-child(n+3){
   text-indent: 50px;
@@ -353,6 +356,6 @@ header .wrapper::before {
 .service-info-toggled span{
   font-weight: bold;
 }
- .hide-div{
+/* .hide-div{
   display: none;
-} 
+} */

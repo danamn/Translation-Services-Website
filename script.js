@@ -15,7 +15,24 @@ var main = function() {
   $(".services-button").click(function(){
 
       var textToToggle = $(this).parent().find(".service-info-toggled");
+      var height;
 
+      if (textToToggle.is('#text1')){
+        height = 630;
+      } else {
+        height = 180;
+      }
+
+
+      if (textToToggle.css('height', '0')){
+        textToToggle.animate({ 'height': height}, 800);
+        textToToggle.css('height', 'auto');
+      } else {
+        textToToggle.animate({ 'height': 0}, 800);
+        textToToggle.css('height', 0);
+      }
+
+/*
       if (textToToggle.is(":visible")) {
         textToToggle.fadeOut(700);
         
@@ -23,7 +40,7 @@ var main = function() {
         textToToggle.fadeIn(800);
       } 
 
-
+*/
      if ($(this).find('.btn-text').html() == "Click for details"){
         $(this).find('.btn-text').html('Click to hide details');
      } else {
