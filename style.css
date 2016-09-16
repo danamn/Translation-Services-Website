@@ -322,13 +322,13 @@ header .wrapper::before {
 }
 .services-button{
   margin: 5px 0 0 25%;
-  padding: 4px 50px;
+  padding: 2px 15%;
   background-color: transparent;
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
   border-radius: 5px;
   color:#00666F;
   cursor: pointer; cursor: hand;
-  font-size: 1rem;
+  font-size: 0.9rem;
 
 }
 .services-button:focus {
